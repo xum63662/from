@@ -2,72 +2,22 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>This is a form</title>
+        <title>Form</title>
     </head>
     <body>
-        <h1>HAPPY!!!</h1>
-        <!--表單-->
-        <form>
-            <!--框架-->
+        <h1>一個小表單</h1>
+        <form action="sent.php" method="post">
             <fieldset>
-                <!--標題-->
-                <legend>個人資訊</legend>
-                <!--姓名欄-->
-                <label>姓名:</label>
-                <input type="text" name="username" size="40">
+                <legend>個資</legend>
+                <label>名字:</label>
+                <input type="text" name="user_name" size="40" requireds>
                 <br>
                 <br>
-                <!--年紀-->
-                <label>年齡:</label>
-                <input type="radio" name="userage" value="age1">13 
-                <input type="radio" name="userage" value="age2">14 
-                <input type="radio" name="userage" value="age3">15 
-                <br>
-                <br>
-                <!-- 興趣 -->
-                <label>愛好:</label>
-                <input type="checkbox" name="habit[]" value="habit1">彈鋼琴
-                <input type="checkbox" name="habit[]" value="habit2">玩樂團
-                <input type="checkbox" name="habit[]" value="habit3">上台表演
-                <input type="checkbox" name="habit[]" value="habit4">自己學習新事物
-                <br>
-                <br>
-                <label style="opacity: 0;">-------</label>
-                <input type="checkbox" name="habit[]" value="habit5">上課
-                <input type="checkbox" name="habit[]" value="habit6">跟同學在一起
-                <input type="checkbox" name="habit[]" value="habit7">愛老師
-                <input type="checkbox" name="habit[]" value="habit8">愛學弟/姐/妹/長
-            </fieldset>
-            <!-- 登入資訊 -->
-            <fieldset>
-                <legend>登入資訊</legend>
-                <!-- Email -->
-                <label>Email:</label>
-                <input type="email" name="useremail" size="40" required>
-                <br>
-                <br>
-                <!-- 密碼 -->
                 <label>密碼:</label>
-                <input type="password" name="userpassword" size="41" required>
-                <!-- 生日 -->
-                <br>
-                <br>
-                <label>生日:</label>
-                <input type="date" name="userbirthday" size="40">
-                <!-- 手機號碼 -->
-                <br>
-                <br>
-                <label>手機號碼:</label>
-                <input type="tel" name="userphone" 
-                pattern="[0-9]{4}-[0-9]{6}" size="37"
-                placeholder="電話格式:0000-000000">
+                <input type="password" size="42" name="user_password" required>
             </fieldset>
-            <!--按鈕-->
-            <!--送出按鈕-->
-            <input type="submit" value="送出">
-            <!--清除按鈕-->
-            <input type="reset" value="清除">
-
+                <input type="submit" value="送出">
+                <input type="reset" value="重製">
         </form>
     </body>
 </html>
